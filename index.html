@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Isometric City Map</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main class="game-shell">
+      <canvas id="city-canvas" aria-label="Isometric city map"></canvas>
+
+      <section class="hud" aria-label="Map controls">
+        <div>
+          <h1>City Map</h1>
+          <p id="tile-readout">120 x 120 ground tiles</p>
+        </div>
+
+        <div class="hud-controls">
+          <button id="zoom-out" type="button" aria-label="Zoom out" title="Zoom out">-</button>
+          <button id="zoom-in" type="button" aria-label="Zoom in" title="Zoom in">+</button>
+          <button id="reset-view" type="button">Reset</button>
+          <label class="toggle">
+            <input id="toggle-grid" type="checkbox">
+            <span>Grid</span>
+          </label>
+        </div>
+      </section>
+
+      <div class="status" id="status" aria-live="polite">Loading tiles</div>
+    </main>
+
+    <script src="./src/game/math.js"></script>
+    <script src="./src/map/assets.js"></script>
+    <script src="./src/map/roads.js"></script>
+    <script src="./src/map/blocks.js"></script>
+    <script src="./src/map/terrain.js"></script>
+    <script src="./src/map/decorations.js"></script>
+    <script src="./src/map/structures.js"></script>
+    <script src="./src/map/collision.js"></script>
+    <script src="./src/map/objects.js"></script>
+    <script src="./src/map-data.js"></script>
+    <script src="./src/game/assets.js"></script>
+    <script src="./src/game/player-data.js"></script>
+    <script src="./src/game/vehicles.js"></script>
+    <script src="./src/game/actors.js"></script>
+    <script src="./src/game/character-mesh.js"></script>
+    <script src="./src/game/character-renderer.js"></script>
+    <script src="./src/game/geometry.js"></script>
+    <script src="./src/game/gltf-character-renderer.js"></script>
+    <script src="./src/game/canvas-drawing.js"></script>
+    <script src="./src/game/renderer.js"></script>
+    <script src="./src/game/controls.js"></script>
+    <script type="module" src="./src/game.js"></script>
+  </body>
+</html>

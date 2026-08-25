@@ -1,0 +1,7 @@
+参考这张图(比如 house-1.png)，生成一个 isometric 视角的落地音乐喷泉，orthographic 2:1 isometric game asset, no perspective, no vanishing point,
+
+camera yaw 45 degrees, camera elevation 30 degrees above horizon,
+
+isometric grid edges at 26.565 degrees, diamond footprint width is twice its height
+
+。不需要背景，不是像素风格，不要带有文字，带alpha通道的png图
